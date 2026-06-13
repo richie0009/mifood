@@ -1,0 +1,6 @@
+{
+  "name": "MiFood",
+  "description": "Order food online in Miami, FL. Fresh pizza, burgers, sushi and more, delivered fast from MiFood.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
