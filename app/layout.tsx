@@ -1,5 +1,5 @@
 import type {Metadata} from 'next';
-import { DM_Sans, Forum } from 'next/font/google';
+import { DM_Sans, Forum, Oswald, Geist } from 'next/font/google';
 import './globals.css';
 import { SiteHeader } from '@/components/SiteHeader';
 import { Footer } from '@/components/Footer';
@@ -16,6 +16,18 @@ const forum = Forum({
   variable: '--font-forum',
 });
 
+const oswald = Oswald({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-oswald',
+});
+
+const geist = Geist({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-geist',
+});
+
 export const metadata: Metadata = {
   title: 'MiFood - Miami Food Delivery',
   description: 'Order food online in Miami, FL. Fresh pizza, burgers, sushi and more, delivered fast from MiFood.',
@@ -23,10 +35,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${forum.variable}`}>
-      <body suppressHydrationWarning className="font-sans text-brand-green-body bg-white antialiased">
+    <html lang="en" className={`${dmSans.variable} ${forum.variable} ${oswald.variable} ${geist.variable}`}>
+      <body suppressHydrationWarning className="font-sans text-brand-green-body bg-white antialiased overflow-x-hidden">
         <SiteHeader />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
