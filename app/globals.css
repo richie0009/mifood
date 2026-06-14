@@ -7,7 +7,6 @@
   --color-brand-green: #536942;
   --color-brand-green-body: rgba(82, 104, 64, 0.75);
   --color-brand-light: #f6f8f5;
-  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
-  --font-oswald: var(--font-oswald), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-forum), ui-serif, Georgia, serif;
 }
